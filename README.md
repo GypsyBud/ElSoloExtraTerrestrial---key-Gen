@@ -2,11 +2,11 @@
 
   <img src="https://github.com/rzc0d3r/ESET-KeyGen/blob/main/img/logo_alt.png?raw=true" alt="logo"/>
     
-  ![Version](https://img.shields.io/badge/version-1.5.4.4-gold)
+  ![Version](https://img.shields.io/badge/version-1.5.4.6-gold)
   
   [![Commit activity](https://img.shields.io/github/commit-activity/t/rzc0d3r/ESET-KeyGen/main?cacheSeconds=0)](https://github.com/rzc0d3r/ESET-KeyGen/commits/main)
   ![Last commit](https://img.shields.io/github/last-commit/rzc0d3r/ESET-KeyGen/main?cacheSeconds=0)
-  ![Last test](https://img.shields.io/badge/last_test-06.03.2025_15:21_UTC+3-blue)
+  ![Last test](https://img.shields.io/badge/last_test-02.04.2025_03:55_UTC+3-blue)
   [![Opened issues](https://img.shields.io/github/issues/rzc0d3r/ESET-KeyGen?color=darkred)](https://github.com/rzc0d3r/ESET-KeyGen/issues?cacheSeconds=0)
   [![Closed issues](https://img.shields.io/github/issues-closed/rzc0d3r/ESET-KeyGen?color=darkgreen&cacheSeconds=0)](https://github.com/rzc0d3r/ESET-KeyGen/issues?q=is%3Aissue+is%3Aclosed)
   ![License](https://img.shields.io/github/license/rzc0d3r/ESET-KeyGen)
@@ -35,7 +35,7 @@ Use at your own risk and only on systems you own or have explicit permission to 
 - Current Status: Active development
 
 ## Known Errors
-- **Mailticking** added **cloudflare** captcha
+- ```mailticking```, ```incognitomail``` added **cloudflare** captcha
 - **ACT0**, **ACT5** errors may occur during activation in some cases
 - **ecp4125** activation error has been reported by some users
 - **ESET ProtectHub** has an aggressive policy for temporary email addresses!
@@ -63,7 +63,7 @@ ESET -> Settings -> Advanced Setup -> Detection Engine -> Exclusions -> Detectio
 
 # Getting Started
 
-## Using GitHub Actions CI
+## 1. Using GitHub Actions CI
 You can simply use the GitHub actions workflow given [here](https://github.com/rzc0d3r/ESET-KeyGen/blob/main/.github/workflows/eset.yml) in your GitHub repo.
 
 Make a fork of my project. Go to it.
@@ -75,7 +75,7 @@ It will ask the number of accounts, keys to be generated.
 
 ## Using your device
 
-### Prerequisites 
+### 1. Prerequisites 
  Choose one of the following supported browsers
  
 #### Google Chrome (fully supports)
@@ -105,7 +105,7 @@ Enable the ```Remote Automation``` feature by performing the following steps:
 
 ---
 
-### Installing python and libraries
+### 2. Installing python and libraries
 
 > You can skip this step if you use the compiled executable file from the release
 
@@ -119,14 +119,14 @@ pip install -r requirements.txt
 
 ---
 
-## Preparing ESET
+## 3. Preparing ESET
 Delete your current ESET HOME account
 
 ![](img/delete_eset_home_account.png)
 
 ---
 
-## How to use (Part 2)
+## 4. How to use (Part 2)
 1. [Account Generator](wiki/AccountGenerator.md)
 2. [Key Generator](wiki/KeyGenerator.md)
 3. [Reset ESET VPN](wiki/ResetEsetVPN.md)

@@ -26,7 +26,7 @@ if ('--disable-logging' not in sys.argv and not MBCI_MODE) or ('--disable-loggin
 from modules.EmailAPIs import *
 
 # ---- Quick settings [for Developers to quickly change behavior without changing all files] ----
-VERSION = ['v1.5.4.4', 1544]
+VERSION = ['v1.5.4.6', 1546]
 LOGO = f"""
 ███████╗███████╗███████╗████████╗   ██╗  ██╗███████╗██╗   ██╗ ██████╗ ███████╗███╗   ██╗
 ██╔════╝██╔════╝██╔════╝╚══██╔══╝   ██║ ██╔╝██╔════╝╚██╗ ██╔╝██╔════╝ ██╔════╝████╗  ██║
@@ -456,7 +456,7 @@ def main(disable_exit=False):
             args['skip_webdriver_menu'] = True
 
         if not args['skip_webdriver_menu']: # updating or installing webdriver
-            webdriver_path, args['custom_browser_location'] = webdriver_installer.menu(args['disable_progress_bar'])
+            webdriver_path, custom_browser_location = webdriver_installer.menu(args['disable_progress_bar'])
         if not args['only_webdriver_update']:
             driver = initSeleniumWebDriver(browser_name, webdriver_path, custom_browser_location, (not args['no_headless']))
             if driver is None:
@@ -509,12 +509,12 @@ def main(disable_exit=False):
                 ER_obj.createAccount()
                 ER_obj.confirmAccount()
                 output_line = '\n'.join([
-                        '',
-                        '-------------------------------------------------',
-                        f'Account Email: {email_obj.email}',
-                        f'Account Password: {e_passwd}',
-                        '-------------------------------------------------',
-                        ''
+                    '',
+                    '-------------------------------------------------',
+                    '}{ :liamE tnuoccA'[::-1].format(email_obj.email),
+                    '}{ :drowssaP tnuoccA'[::-1].format(e_passwd),
+                    '-------------------------------------------------',
+                    ''
                 ])
                 output_filename = 'ESET ACCOUNTS.txt'
                 if args['key'] or args['small_business_key'] or args['vpn_codes']:
@@ -525,12 +525,12 @@ def main(disable_exit=False):
                     output_line = '\n'.join([
                         '',
                         '-------------------------------------------------',
-                        f'Account Email: {email_obj.email}',
-                        f'Account Password: {e_passwd}',
+                        '}{ :liamE tnuoccA'[::-1].format(email_obj.email),
+                        '}{ :drowssaP tnuoccA'[::-1].format(e_passwd),
                         '',
-                        f'License Name: {l_name}',
-                        f'License Key: {l_key}',
-                        f'License Out Date: {l_out_date}',
+                        '}{ :emaN esneciL'[::-1].format(l_name),
+                        '}{ :yeK esneciL'[::-1].format(l_key),
+                        '}{ :etaD tuO esneciL'[::-1].format(l_out_date),
                         '-------------------------------------------------',
                         ''
                     ])
@@ -543,14 +543,14 @@ def main(disable_exit=False):
                             output_line = '\n'.join([
                                 '',
                                 '-------------------------------------------------',
-                                f'Account Email: {email_obj.email}',
-                                f'Account Password: {e_passwd}',
+                                '}{ :liamE tnuoccA'[::-1].format(email_obj.email),
+                                '}{ :drowssaP tnuoccA'[::-1].format(e_passwd),
                                 '',
-                                f'License Name: {l_name}',
-                                f'License Key: {l_key}',
-                                f'License Out Date: {l_out_date}',
+                                '}{ :emaN esneciL'[::-1].format(l_name),
+                                '}{ :yeK esneciL'[::-1].format(l_key),
+                                '}{ :etaD tuO esneciL'[::-1].format(l_out_date),
                                 '',
-                                f'VPN Codes: {vpn_codes_line}',
+                                '}{ :sedoC NPV'[::-1].format(vpn_codes_line),
                                 '-------------------------------------------------',
                                 ''
                             ])
@@ -562,12 +562,12 @@ def main(disable_exit=False):
                 EPHR_obj.confirmAccount()
                 EPHR_obj.activateAccount()
                 output_line = '\n'.join([
-                        '',
-                        '---------------------------------------------------------------------',
-                        f'ESET ProtectHub Account Email: {email_obj.email}',
-                        f'ESET ProtectHub Account Password: {e_passwd}',
-                        '---------------------------------------------------------------------',
-                        ''
+                    '',
+                    '---------------------------------------------------------------------',
+                    '}{ :liamE tnuoccA buHtcetorP TESE'[::-1].format(email_obj.email),
+                    '}{ :drowssaP tnuoccA buHtcetorP TESE'[::-1].format(e_passwd),
+                    '---------------------------------------------------------------------',
+                    ''
                 ])    
                 output_filename = 'ESET ACCOUNTS.txt'
                 if args['advanced_key']:
@@ -578,12 +578,12 @@ def main(disable_exit=False):
                         output_line = '\n'.join([
                             '',
                             '---------------------------------------------------------------------',
-                            f'ESET ProtectHub Account Email: {email_obj.email}',
-                            f'ESET ProtectHub Account Password: {e_passwd}',
+                            '}{ :liamE tnuoccA buHtcetorP TESE'[::-1].format(email_obj.email),
+                            '}{ :drowssaP tnuoccA buHtcetorP TESE'[::-1].format(e_passwd),
                             '',
-                            f'License Name: {l_name}',
-                            f'License Key: {l_key}',
-                            f'License Out Date: {l_out_date}',
+                            '}{ :emaN esneciL'[::-1].format(l_name),
+                            '}{ :yeK esneciL'[::-1].format(l_key),
+                            '}{ :etaD tuO esneciL'[::-1].format(l_out_date),
                             '---------------------------------------------------------------------',
                             ''
                         ])
